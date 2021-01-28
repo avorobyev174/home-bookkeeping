@@ -4,14 +4,13 @@
       <h3>История записей</h3>
     </div>
 
-    <div class="history-chart">
+    <div class="history-chart" v-show="records.length">
       <canvas ref="canvas"></canvas>
     </div>
 
     <Loader v-if="loading"/>
 
-    <p class="center" v-else-if="!records.length">
-      Пока нет записей.
+    <p class="center" v-else-if="!records.length">Пока нет записей.
       <router-link to="/record">Добавить новую запись</router-link>
     </p>
 
