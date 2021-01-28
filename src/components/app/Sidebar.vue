@@ -14,13 +14,15 @@
 </template>
 
 <script>
+  import localizeFilter from "../../filters/localize.filter";
+
     export default {
       name: "Sidebar",
       props: ['value'],
       data: () => ({
         links: [
           {title: 'Счет', url: '/', exact: true},
-          {title: 'История', url: '/history'},
+          {title: localizeFilter('HistoryTitle'), url: '/history'},
           {title: 'Планирование', url: '/planning'},
           {title: 'Новая запись', url: '/record'},
           {title: 'Категории', url: '/categories'}

@@ -70,6 +70,9 @@
       computed: {
         name() {
           return this.$store.getters.info.name
+        },
+        locale(){
+          return this.$store.getters.info.locale
         }
       }
     }

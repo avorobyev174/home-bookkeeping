@@ -30,7 +30,7 @@
       async mounted() {
         this.categories = await this.$store.dispatch('fetchCategories')
         this.loading = false
-        console.log(this.categories)
+        //console.log(this.categories)
       },
       data: () => ({
         categories: [],

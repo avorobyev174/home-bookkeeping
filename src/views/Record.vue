@@ -158,8 +158,6 @@
             this.$v.$reset()
             this.amount = 1
             this.description = ''
-
-            //this.$emit('updated', categoryData)
           } catch (e) {
 
           }
